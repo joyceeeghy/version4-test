@@ -1,0 +1,39 @@
+<!DOCTYPE> 
+<html>
+<head>
+ <script>
+	function myFunction() {
+	 var x = document.forms["frm1"]["input1"].value;
+    if (x == null || x == "") {
+        alert("Inputs could not be blank");
+        return false;
+    }
+    }
+		function myFunction() {
+	 var x = document.forms["frm1"]["input2"].value;
+    if (x == null || x == "") {
+        alert("Inputs could not be blank");
+        return false;
+    }
+    }
+		function myFunction() {
+	 var x = document.forms["frm1"]["input3"].value;
+    if (x == null || x == "") {
+        alert("Inputs could not be blank");
+        return false;
+    }
+    }
+
+	
+ </script>
+</head>
+<body>
+<form name="frm1" onsubmit="return validateForm()">	
+  <input type="text" name="input1" value=""> * 
+  <input type="text" name="input2" value=""> >
+  <input type="text" name="input3" value="">
+  <input type="submit" value="Check" onclick="myFunction()">
+</form> 
+
+</body>
+</html>
